@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Registro | Mi Inventario
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1 id="titulo-form">
+    Registro de producto
+   </h1>
+   <p>
+    Agrega o modifica art&iacute;culos del inventario
+   </p>
+  </header>
+  <nav>
+   <a href="index.html">
+    Inicio
+   </a>
+   <a href="productos.html">
+    Productos
+   </a>
+   <a href="agregar.html">
+    Agregar producto
+   </a>
+  </nav>
+  <main>
+   <div class="panel">
+    <h2>
+     Datos del producto
+    </h2>
+    <p class="muted">
+     Los campos con * son obligatorios.
+    </p>
+    <div hidden="" id="mensaje">
+    </div>
+    <form id="form-producto">
+     <label for="nombre">
+      Nombre del producto *
+     </label>
+     <input id="nombre" maxlength="100" name="nombre" placeholder="Ej. Mochila" required=""/>
+     <label for="categoria">
+      Categor&iacute;a *
+     </label>
+     <input id="categoria" maxlength="60" name="categoria" placeholder="Ej. Escolar" required=""/>
+     <label for="descripcion">
+      Descripci&oacute;n
+     </label>
+     <textarea id="descripcion" maxlength="500" name="descripcion" placeholder="Descripci&oacute;n del producto" rows="4"></textarea>
+     <label for="cantidad">
+      Cantidad *
+     </label>
+     <input id="cantidad" min="0" name="cantidad" placeholder="0" required="" step="1" type="number"/>
+     <div class="form-actions">
+      <button id="guardar" type="submit">
+       Guardar producto
+      </button>
+      <a class="btn secondary" href="productos.html">
+       Cancelar
+      </a>
+     </div>
+    </form>
+   </div>
+  </main>
+  <footer>
+   Sistema de Inventario &middot; Unidad 4
+  </footer>
+  <script defer="" src="inventario.js">
+  </script>
+ </body>
+</html>

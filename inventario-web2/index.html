@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Inicio | Mi Inventario
+  </title>
+  <link defer="" href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Mi Inventario
+   </h1>
+   <p>
+    Control de productos &middot; Aplicaciones Web, Unidad 4
+   </p>
+  </header>
+  <nav>
+   <a href="index.html">
+    Inicio
+   </a>
+   <a href="productos.html">
+    Productos
+   </a>
+   <a href="agregar.html">
+    Agregar producto
+   </a>
+  </nav>
+  <main>
+   <h2>
+    Bienvenido al inventario
+   </h2>
+   <p class="muted">
+    Organiza tus productos, registra entradas y revisa las existencias.
+   </p>
+   <div class="grid">
+    <div class="stat">
+     <strong id="inicio-total">
+      &mdash;
+     </strong>
+     Productos registrados
+    </div>
+    <div class="stat">
+     <strong id="inicio-existencias">
+      &mdash;
+     </strong>
+     Unidades disponibles
+    </div>
+   </div>
+   <section class="card" style="margin-top:22px">
+    <h2>
+     &iquest;Qu&eacute; puedes hacer?
+    </h2>
+    <p>
+     Agregar nuevos productos, consultar el inventario, editar informaci&oacute;n, eliminar registros y descargar un reporte para Excel.
+    </p>
+    <a class="btn" href="productos.html">
+     Ver inventario
+    </a>
+    <a class="btn secondary" href="agregar.html">
+     Agregar producto
+    </a>
+   </section>
+   <p class="muted">
+    Los datos se guardan en este navegador. Para compartirlos entre computadoras se necesitar&iacute;a una base de datos y un servidor.
+   </p>
+  </main>
+  <footer>
+   Sistema de Inventario &middot; Unidad 4
+  </footer>
+  <script defer="" src="inventario.js">
+  </script>
+ </body>
+</html>

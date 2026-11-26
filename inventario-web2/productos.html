@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Productos | Mi Inventario
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Inventario de productos
+   </h1>
+   <p>
+    Consulta y administra los registros
+   </p>
+  </header>
+  <nav>
+   <a href="index.html">
+    Inicio
+   </a>
+   <a href="productos.html">
+    Productos
+   </a>
+   <a href="agregar.html">
+    Agregar producto
+   </a>
+  </nav>
+  <main>
+   <h2>
+    Productos registrados
+   </h2>
+   <p class="muted">
+    Total:
+    <b id="total">
+     0
+    </b>
+    productos &middot;
+    <b id="existencias">
+     0
+    </b>
+    unidades
+   </p>
+   <div hidden="" id="mensaje">
+   </div>
+   <div class="toolbar">
+    <input aria-label="Buscar productos" id="buscar" placeholder="Buscar producto o categor&iacute;a..." type="search"/>
+    <div>
+     <a class="btn" href="agregar.html">
+      + Nuevo producto
+     </a>
+     <button class="secondary" id="exportar" type="button">
+      Exportar a Excel (CSV)
+     </button>
+    </div>
+   </div>
+   <div class="table-wrap">
+    <table>
+     <thead>
+      <tr>
+       <th>
+        ID
+       </th>
+       <th>
+        Producto
+       </th>
+       <th>
+        Categor&iacute;a
+       </th>
+       <th>
+        Descripci&oacute;n
+       </th>
+       <th>
+        Existencia
+       </th>
+       <th>
+        Acciones
+       </th>
+      </tr>
+     </thead>
+     <tbody id="filas">
+     </tbody>
+    </table>
+   </div>
+  </main>
+  <footer>
+   Sistema de Inventario &middot; Unidad 4
+  </footer>
+  <script defer="" src="inventario.js">
+  </script>
+ </body>
+</html>
